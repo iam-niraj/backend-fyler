@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FYLER</title>
+    <style>
+        .hidden { display: none; }
+        body { 
+            width: 300px; 
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>FYLER</h2>
+    
+    <input type="file" id="fileInput" class="hidden" multiple>
+    
+    <button id="compressBtn">Compress</button>
+    <button id="mergeBtn">Merge</button>
+    <button id="splitBtn">Split</button>
+
+    <!-- Load scripts in correct order -->
+    <script src="content.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

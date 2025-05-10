@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test File Upload Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Your File</h2>
+        <p>Accepted formats: <strong>pdf</strong></p>
+        <p>📜 max file size: <strong>50kb</strong></p>  <!-- Mentioned in text -->
+        <!-- <p>📜 max file dimensions: <strong>10x5</strong></p>   -->
+        
+        <form id="uploadForm">
+            <label for="fileInput">Select a file:</label>
+            <input 
+                type="file" 
+                id="fileInput" 
+                multiple="true"
+                >  <!-- Max file size in bytes (100KB) -->
+                <!-- accept=".jpg,.png"  -->
+            <br><br>
+            <button type="submit">Upload</button>
+        </form>
+
+        <img id="outputImage" alt="Loaded Image" />
+
+    </div>
+</body>
+</html>
