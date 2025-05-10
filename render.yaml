@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flask-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    repo: https://github.com/yourusername/yourrepo.git # Replace with your actual repo
+    branch: main
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
